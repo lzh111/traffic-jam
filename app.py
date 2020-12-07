@@ -35,7 +35,7 @@ def get_geo():
     # 绘制散点分布图
     geo = Geo()
     geo.add_schema(maptype='china')  # 加入中国地图
-    geo.add('各城市拥堵指数 by kimol', data, type_='effectScatter')  # 设置地图类型及数据
+    geo.add('各城市拥堵指数', data, type_='effectScatter')  # 设置地图类型及数据
     geo.set_series_opts(label_opts=opts.LabelOpts(is_show=False))  # 设置是否显示标签
     geo.set_global_opts(visualmap_opts=opts.VisualMapOpts(
         # max_ = 2.5, # 用于连续表示
